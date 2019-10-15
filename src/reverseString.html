@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+     
+        <h1>Reverse String</h1>
+        <p>For this challenge you will be reversing a string.</p>
+        <h3>String is : "Arguments goes here"</h3>
+        <script>
+         function FirstReverse(str) { 
+        var arr = [];
+        var str2="";
+        for(var i = 0; i<str.length; i++){
+        arr.push(str.charAt(i));
+        
+        }
+        arr.reverse();
+        for(var j =0; j<arr.length;j++){
+        str2 +=arr[j];
+        
+        }
+        // code goes here  
+        return str2; 
+
+        }
+        
+        // keep this function call here 
+        document.write(FirstReverse("Arguments goes here"));   
+        </script>
+  
+    </body>
+</html>
