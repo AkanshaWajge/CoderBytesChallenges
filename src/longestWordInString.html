@@ -7,6 +7,24 @@
         <h1>Longest Word</h1>
         <p>For this challenge you will be determining the largest word in a string.</p>
         <h3>String : "pride and prejudice"</h3>
+        <codde>
+            <pre>
+                    function longestWord(string) {
+                        var str = string.split(" ");
+                        var longest = 0;
+                        var word = null;
+                        str.forEach(function(str) {
+                            if (longest < str.length) {
+                                longest = str.length;
+                                word = str;
+                            }
+                        });
+                        return word;
+                        }
+                        document.write(longestWord("pride and prejudice"));
+            </pre>
+
+        </codde>
         <script>
             function longestWord(string) {
             var str = string.split(" ");
@@ -20,7 +38,7 @@
             });
             return word;
             }
-            document.write(longestWord("pride and prejudice"));
+            document.write("Result : "+longestWord("pride and prejudice"));
         </script>
   
     </body>

@@ -7,6 +7,24 @@
         <h1>Letter Changes</h1>
         <p>For this challenge you will be manipulating characters in a string based off their positions in the alphabet. </p>
         <h3>String : "pride and prejudice"</h3>
+        <code>
+            <pre>
+                    function LetterChanges(str) { 
+                        var converted = str.replace(/[a-z]/gi, function(char) { 
+                        return (char === 'z' || char === 'Z') ? 'a' : String.fromCharCode(char.charCodeAt() + 1);
+                        });
+                
+                        var capitalized = converted.replace(/a|e|i|o|u/gi, function(vowel) { 
+                        return vowel.toUpperCase();
+                        });
+                
+                        return capitalized;
+                            
+                        }
+                        
+                        LetterChanges("pride and prejudice");
+            </pre>
+        </code>
         <script>
         function LetterChanges(str) { 
 
@@ -29,7 +47,7 @@
             
         }
         
-        LetterChanges("pride and prejudice");
+        document.write("Result : "+LetterChanges("pride and prejudice"));
         </script>
   
     </body>

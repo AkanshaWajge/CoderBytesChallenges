@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+     
+        <h1>Capitalizing certain characters</h1>
+        <p>For this challenge you will be capitalizing certain characters in a string. </p>
+        <h3>Have the function LetterCapitalize(str) take the str parameter being passed and capitalize the first letter of each word. Words will be separated by only one space.</h3>
+        <code>
+            <pre>
+                    function titleCase(str) {
+                        var splitStr = str.toLowerCase().split(' ');
+                        for (var i = 0; i < splitStr.length; i++) {
+                            // You do not need to check if i is larger than splitStr length, as your for does that for you
+                            // Assign it back to the array
+                            splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+                        }
+                        // Directly return the joined string
+                        return splitStr.join(' '); 
+                        }
+                
+                        document.write(titleCase("I'm Akansha Wajge")); 
+            </pre>
+        </code>
+        <script>
+        function titleCase(str) {
+        var splitStr = str.toLowerCase().split(' ');
+        for (var i = 0; i < splitStr.length; i++) {
+            // You do not need to check if i is larger than splitStr length, as your for does that for you
+            // Assign it back to the array
+            splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+        }
+        // Directly return the joined string
+        return splitStr.join(' '); 
+        }
+
+        document.write("Result : "+titleCase("I'm Akansha Wajge"));        
+        </script>
+  
+    </body>
+</html>
