@@ -1,0 +1,35 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Alphabet Soup</h1>
+        <p>For this challenge you will be sorting characters in a string.</p>
+        <h3>Have the function AlphabetSoup(str) take the str string parameter being passed and return the string with the letters in alphabetical order (ie. hello becomes ehllo). Assume numbers and punctuation symbols will not be included in the string.</h3>
+       <code>
+           <pre>
+                function AlphabetSoup(str) { 
+                    str = str.split("");
+                    str = str.sort();
+                    str = str.join("");
+                    return str; 
+        
+                    }
+                    
+                   document.write("Result : "+AlphabetSoup("hello"));
+           </pre>
+       
+       </code>
+       <script>
+            function AlphabetSoup(str) { 
+            str = str.split("");
+            str = str.sort();
+            str = str.join("");
+            return str; 
+
+            }
+            
+           document.write("Result : "+AlphabetSoup("hello"));
+        </script>
+  
+    </body>
+</html>
